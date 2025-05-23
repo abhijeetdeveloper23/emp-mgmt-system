@@ -20,7 +20,7 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
 
 // HTTP link
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  uri: "https://test-task-en6w.onrender.com/graphql",
 });
 
 // Auth link for adding the token to requests
