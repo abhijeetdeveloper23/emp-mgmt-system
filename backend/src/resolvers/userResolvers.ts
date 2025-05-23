@@ -1,11 +1,11 @@
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import User, { Role, UserDocument } from "../models/User.js";
+import User, { Role, UserDocument } from "../models/User";
 import {
   AuthenticationError,
   ForbiddenError,
   UserInputError,
-} from "../utils/errors.js";
+} from "../utils/errors";
 import { Types } from "mongoose";
 
 // Get JWT secret from environment or use a default for development

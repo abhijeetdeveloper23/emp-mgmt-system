@@ -1,6 +1,6 @@
-import userResolvers from "./userResolvers.js";
-import employeeResolvers from "./employeeResolvers.js";
-import dashboardResolvers from "./dashboardResolvers.js";
+import userResolvers from "./userResolvers";
+import employeeResolvers from "./employeeResolvers";
+import dashboardResolvers from "./dashboardResolvers";
 
 // Merge all resolvers
 export const resolvers = {

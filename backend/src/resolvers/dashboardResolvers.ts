@@ -1,5 +1,5 @@
-import Employee from "../models/Employee.js";
-import { AuthenticationError } from "../utils/errors.js";
+import Employee from "../models/Employee";
+import { AuthenticationError } from "../utils/errors";
 
 interface Context {
   user?: {

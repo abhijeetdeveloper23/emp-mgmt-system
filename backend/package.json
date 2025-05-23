@@ -6,8 +6,6 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon --watch './src' --exec 'node --loader ts-node/esm' ./src/index.ts",
-    "dev1": "nodemon --watch './src' --exec 'node --loader ts-node/esm' ./src/index.ts",
-    "dev2": "ts-node-esm src/index.ts",
     "build": "tsc",
     "postbuild": "cpx \"src/schema/schema.graphql\" dist/schema/",
     "start": "node dist/index.js",

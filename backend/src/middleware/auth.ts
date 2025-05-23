@@ -1,5 +1,5 @@
 import jwt, { JwtPayload } from "jsonwebtoken";
-import User, { UserDocument } from "../models/User.js";
+import User, { UserDocument } from "../models/User";
 
 // Get JWT secret from environment or use a default for development
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key";

@@ -6,9 +6,9 @@ import http, { Server } from "node:http";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import { typeDefs } from "./schema/index.js";
-import { resolvers } from "./resolvers/index.js";
-import { verifyToken } from "./middleware/auth.js";
+import { typeDefs } from "./schema/index";
+import { resolvers } from "./resolvers/index";
+import { verifyToken } from "./middleware/auth";
 
 // Load environment variables
 dotenv.config();

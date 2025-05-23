@@ -1,10 +1,10 @@
-import Employee from "../models/Employee.js";
+import Employee from "../models/Employee";
 import {
   AuthenticationError,
   ForbiddenError,
   UserInputError,
-} from "../utils/errors.js";
-import { Role } from "../models/User.js";
+} from "../utils/errors";
+import { Role } from "../models/User";
 
 interface Context {
   user?: {
@@ -315,7 +315,10 @@ const employeeResolvers = {
 
       // Delete employee
       const result = await Employee.findByIdAndDelete(id);
-      return !!result;
+      if (!result) {
+        throw new UserInputError("Employee not found");
+      }
+      return true;
     },
   },
 };
