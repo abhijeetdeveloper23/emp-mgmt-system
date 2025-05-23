@@ -10,4 +10,12 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    proxy: {
+      "/graphql": {
+        target: "https://test-task-en6w.onrender.com",
+        changeOrigin: true,
+      },
+    },
+  },
 });
